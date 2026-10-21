@@ -1,0 +1,46 @@
+{
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/:path/", "destination": "/:path", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/advertise", "destination": "/advertise.html" },
+    { "source": "/audience", "destination": "/audience.html" },
+    { "source": "/brands", "destination": "/brands.html" },
+    { "source": "/conferences", "destination": "/conferences.html" },
+    { "source": "/companies", "destination": "/companies.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/news", "destination": "/news.html" },
+    { "source": "/search", "destination": "/search.html" },
+    { "source": "/team", "destination": "/team.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/vacancies", "destination": "/vacancies.html" },
+    { "source": "/freelancer", "destination": "/freelancer.html" }
+  ]
+}

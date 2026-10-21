@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const team = [
+  {
+    img: "/assets/Team/FM_Team_Gary.png",
+    name: "Gary Stroebel",
+    role: "CEO",
+    bio: "30 years of media experience with a proven track record in sales management, radio programming and research. Passionate about driving innovation and change management."
+  },
+  {
+    img: "/assets/Team/FM_Team_Stefan.png",
+    name: "Stefan Hugo",
+    role: "Director",
+    bio: "Former PwC Partner. Various management positions, Namibia Revenue Agency, NIPDB and the Windhoek High School Board, prior to the 2024 merger."
+  },
+  {
+    img: "/assets/Team/FM_Team_Zellmari.png",
+    name: "Zellmari Brandt",
+    role: "GM Brands and Video",
+    bio: "Creative professional with 5+ years in film, theatre, live events, branding and marketing. Specialises in storytelling and project management."
+  },
+  {
+    img: "/assets/Team/FM_Team_Nicci.png",
+    name: "Nicci Wilson",
+    role: "GM Commercial Sales",
+    bio: "Sales management. 7+ years in radio sales. Degree in Marketing. Builds client relationships and marketing campaigns."
+  },
+  {
+    img: "/assets/Team/FM_Team_Juan.png",
+    name: "Juan Vorster",
+    role: "GM Radio Broadcasting",
+    bio: "Over 16 years as a station manager. Namibian broadcasting since 2003. Oversees programming across 4 radio stations. Culinary degree from Malaysia."
+  },
+  {
+    img: "/assets/Team/FM_Team_Christine.png",
+    name: "Christine Venter",
+    role: "GM Business Development",
+    bio: "10 years radio experience. Digital media and marketing campaigns. Diploma in Media & Communications. Handles campaign development."
+  },
+  {
+    img: "/assets/Team/FM_Team_Zenobia.png",
+    name: "Zenobia Bruwer",
+    role: "GM Compliance Services",
+    bio: "16+ years of financial management and accounting expertise."
+  },
+  {
+    img: "/assets/Team/FM_Team_Monique.png",
+    name: "Monique Schmid",
+    role: "Country Manager, PromoBasket Namibia",
+    bio: "7+ years in media and retail sales and management experience."
+  },
+  {
+    img: "/assets/Team/FM_Team_KC.png",
+    name: "Kaycee Butshe",
+    role: "Fresh FM and 99FM Station Manager",
+    bio: "Started as a presenter and now has 13 years in broadcasting. Manages Fresh FM and 99FM for Namibia’s young professionals."
+  },
+  {
+    img: "/assets/Team/FM_Team_Simon.png",
+    name: "Simon Mundandala",
+    role: "Omulunga Radio Station Manager",
+    bio: "Part of Omulunga Radio since it began, and a trusted voice in the Oshiwambo community."
+  },
+  {
+    img: "/assets/Team/FM_Team_Alina.png",
+    name: "Alina Alma Shiimi",
+    role: "Station and Brand Manager",
+    bio: "Leads station and brand work, and heads programme coordination across the radio stations."
+  },
+  {
+    img: "/assets/Team/FM_Team_Yanna.png",
+    name: "Yanna Smith",
+    role: "Head of News and Editor-in-Chief",
+    bio: "Journalist since 1993, from the Windhoek Observer through print, magazines and radio. Leads FM News and editorial policy."
+  },
+  {
+    img: "/assets/Team/FM_Team_Simone.png",
+    name: "Simone Kühn",
+    role: "General Manager, Property News",
+    bio: "Leads Property News Namibia, Future Media’s property brand, across advertising, listings and editorial."
+  },
+  {
+    img: "/assets/Team/FM_Team_Anne.png",
+    name: "Anne Mans",
+    role: "Nova 103.5 Presenter",
+    bio: "Hosts Take A Step Back on Nova 103.5, and co-hosts The Secret Life of Motherhood."
+  }
+];
+---
+<Layout title="Team – FutureMedia" fonts="display" bodyClass="conf">
+<section class="team">
+  <h1>Meet the <span>TEAM</span></h1>
+  <div class="team-grid">
+    {team.map((person, i) => (
+      <article class="member">
+        <div class="photo"><img src={person.img} alt={person.name} width="1167" height="779" decoding="async" loading={i < 3 ? "eager" : "lazy"} fetchpriority={i === 0 ? "high" : undefined} /></div>
+        <h2>{person.name}</h2>
+        <p class="role">{person.role}</p>
+        <p>{person.bio}</p>
+      </article>
+    ))}
+  </div>
+</section>
+</Layout>
