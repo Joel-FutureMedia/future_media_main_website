@@ -6,6 +6,8 @@
 /audience/     /audience.html      200
 /brands        /brands.html        200
 /brands/       /brands.html        200
+/digital       /digital.html       200
+/digital/      /digital.html       200
 /conferences   /conferences.html   200
 /conferences/  /conferences.html   200
 /companies     /companies.html     200
@@ -28,3 +30,9 @@
 /vacancies/    /vacancies.html     200
 /freelancer    /freelancer.html    200
 /freelancer/   /freelancer.html    200
+/media-audit   /media-audit.html   200
+/media-audit/  /media-audit.html   200
+/admin         /admin.html         200
+/admin/        /admin.html         200
+/shopbeat      /shopbeat.html      200
+/shopbeat/     /shopbeat.html      200

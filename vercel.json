@@ -31,6 +31,7 @@
     { "source": "/advertise", "destination": "/advertise.html" },
     { "source": "/audience", "destination": "/audience.html" },
     { "source": "/brands", "destination": "/brands.html" },
+    { "source": "/digital", "destination": "/digital.html" },
     { "source": "/conferences", "destination": "/conferences.html" },
     { "source": "/companies", "destination": "/companies.html" },
     { "source": "/contact", "destination": "/contact.html" },
@@ -41,6 +42,9 @@
     { "source": "/team", "destination": "/team.html" },
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/vacancies", "destination": "/vacancies.html" },
-    { "source": "/freelancer", "destination": "/freelancer.html" }
+    { "source": "/freelancer", "destination": "/freelancer.html" },
+    { "source": "/media-audit", "destination": "/media-audit.html" },
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/shopbeat", "destination": "/shopbeat.html" }
   ]
 }

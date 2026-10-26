@@ -88,7 +88,9 @@ function go(next, fromScroll) {
 }
 
 if (deck && slides.length) {
+  const start = slides.findIndex(slide => slide.id === location.hash.replace("#", ""));
   show(slides[0]);
+  if (start > 0) go(start, true);
   window.addEventListener("scroll", () => {
     if (lock) return;
     const span = deck.offsetHeight - window.innerHeight;

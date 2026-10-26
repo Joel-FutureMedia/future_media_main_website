@@ -2,5 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="News – FutureMedia" fonts="text">
-<main class="sub"><h1>News</h1><p>Latest news, newsletters and past events.</p><a class="btn" href="/index.html">Back home</a></main>
+<main class="sub live-page">
+  <div class="live-hero">
+    <p class="eyebrow">Stories</p>
+    <h1>News</h1>
+    <p>Latest notes from the FutureMedia newsroom.</p>
+  </div>
+  <div class="news-grid" id="newsGrid"><p>Loading news…</p></div>
+  <div class="live-hero" style="margin-top:56px">
+    <p class="eyebrow">Diary</p>
+    <h1>Events</h1>
+    <p>What’s on across the FutureMedia network.</p>
+  </div>
+  <div class="news-grid" id="eventGrid"><p>Loading events…</p></div>
+</main>
 </Layout>

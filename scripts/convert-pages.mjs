@@ -43,3 +43,7 @@ for (const [file, out, fonts, bodyClass] of pages) {
   fs.writeFileSync(path.join(outDir, out), astro);
   console.log("wrote", out);
 }
+
+
+
+//
