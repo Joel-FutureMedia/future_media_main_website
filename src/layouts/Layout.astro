@@ -1,0 +1,26 @@
+---
+const { title, bodyClass = "", preload = "" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{preload && <link rel="preload" as="image" href={preload} fetchpriority="high">}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script is:inline>document.documentElement.classList.add("js")</script>
+</head>
+<body class={bodyClass || undefined}>
+<div id="hdr"></div>
+<slot />
+<div id="ftr"></div>
+<script is:inline src="/js/main.js"></script>
+<script is:inline src="/js/fm-api.js"></script>
+<script is:inline src="/js/site-live.js"></script>
+<slot name="scripts" />
+</body>
+</html>

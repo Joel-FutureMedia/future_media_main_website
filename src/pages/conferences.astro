@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Conferences – FutureMedia" fonts="display" bodyClass="conf" preload="/assets/conference/slide1.webp">
+<section class="confhero" style="background-image:url('/assets/conference/slide1.webp')">
+<div class="confgrid">
+<div class="slider" id="slider">
+<div class="slides">
+<figure><img src="/assets/conference/slide1.webp" alt="Future of Business 2026" fetchpriority="high" decoding="async"></figure>
+<figure><img src="/assets/conference/slide2.webp" alt="PropertyNews NamProp Conference" decoding="async" loading="lazy"></figure>
+<figure><img src="/assets/conference/slide3.webp" alt="Flight Club business breakfast" decoding="async" loading="lazy"></figure>
+</div>
+<div class="dots"></div>
+</div>
+<aside class="cpanel"><h2>Join the conversation at our next conference</h2><div class="list"><a href="/contact.html">Become a Sponsor</a><a href="/contact.html">Sponsor Coffee</a><a href="/contact.html">Buy Tickets</a><a href="/news.html">Newsletter Sign Up</a><a href="/about.html">FAQ</a><a href="/gallery.html">Past Events</a></div></aside>
+<div class="cinfo"><h1 id="ctitle"></h1><p id="cdesc"></p></div>
+</div>
+</section>
+<section class="wrap upc"><h2>Upcoming Events</h2><div class="ev"><div class="e"><img src="/assets/conference/slide1.webp" alt="Nedbank Future of Business 2027" decoding="async" loading="lazy"><h3>Nedbank Future of Business 2027</h3><a class="btn" href="/contact.html">More Info</a></div><div class="e"><img src="/assets/event/event2.webp" alt="PropertyNews NamProp Conference" decoding="async" loading="lazy"><h3>PropertyNews NamProp Conf</h3><a class="btn" href="/contact.html">More Info</a></div><div class="e"><img src="/assets/event/event3.webp" alt="Flight Club 2027" decoding="async" loading="lazy"><h3>Flight Club 2027</h3><a class="btn" href="/contact.html">More Info</a></div></div></section>
+<script is:inline slot="scripts">const CONFS=[["Future of Business 2026","Namibia’s flagship business conference, hosted with Nedbank. Two days of keynotes, panel debates and networking with the country’s leading executives, entrepreneurs and policy makers."],["PropertyNews NamProp Conference","The annual meeting point for developers, agents, banks and conveyancers to unpack Namibia’s property market, financing trends and the year ahead."],["Flight Club","An invitation-only business breakfast series where founders and decision makers trade ideas, form partnerships and hear from guest speakers."]];</script>
+<script is:inline slot="scripts" src="/js/conf.js"></script>
+</Layout>
